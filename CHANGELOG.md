@@ -1,10 +1,15 @@
 ## Unreleased version
-
 - BREAKING CHANGE: Allow changing the order of the social network links that appear in the footer (#1152)
-- BREAKING CHANGE: `google-scholar` social network link no longer requires the prefix `citations?user=`; if you previously set this parameter, it needs to be updated (#1189)  
-- Fixed bug where hovering over search results showed the text "{desc}" (#1156) 
+- BREAKING CHANGE: `google-scholar` social network link no longer requires the prefix `citations?user=`; if you previously set this parameter, it needs to be updated (#1189)
+- Added explicit support for favicons, you only need to add a `favicon.ico` file to the root directory
+- The footer of a page always sticks to the bottom, even on short pages (#576)
+- Added `author` YAML parameter to allow specifying the author(s) of a post (#1220)
+- Fixed bug where hovering over search results showed the text "{desc}" (#1156)
 - Added social network links for GitLab, Bluesky (#1168, #1218)
 - Added instructions and example on how to fix image links in project sites (#1171)
+- Pagination buttons: use nicer arrows, and don't show text on small screens (#1221)
+- Updated Yelp URL format - if you previously used the `yelp` social network config parameter, you might need to update the config value (#1259)
+- Added `title-on-all-pages` config setting, that adds the website title to all page titles (#1272)
 
 ## v6.0.1 (2023-06-08)
 
